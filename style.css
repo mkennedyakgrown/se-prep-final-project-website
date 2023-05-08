@@ -3,5 +3,11 @@
     color: white;
 }
 
-.Images {
+div.Main-content-image {
+    display: block;
+    width: 25%;
+}
+
+.Footer-image {
+    width: 100%;
 }
