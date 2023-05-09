@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(33, 90, 0);
+    background-color: rgb(0, 74, 63);
 }
 
 .Update-bar {
@@ -13,25 +13,134 @@ body {
     font-size: larger;
 }
 
-.Header-nav {
-    
-}
-
-div.Header-nav a {
-    color: rgb(142, 253, 255);
-}
-
-div.Main-content-image {
+.Header {
     display: block;
+    width: 100%;
+    padding-bottom: 10px;
+    background-color: rgb(16, 42, 0);
+    text-align: center;
+}
+
+img.Header-logo {
     width: 25%;
 }
 
-div.Main-content {
-    display: block;
-    width: auto;
+div.Header-nav a {
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+}
 
+div.Header-nav .Header-nav-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+}
+
+.Main-content {
+    display: block;
+    background-color: rgb(33, 90, 0);
+    color:aliceblue;
+    font-size: larger;
+}
+
+.Main-content-header {
+    text-align: center;
+    padding: 20px;
+}
+
+strong {
+    font-size: xx-large;
+}
+
+.Main-content-image {
+    float: left;
+    display: block;
+    width: 33.3%;
+}
+
+.Main-content-image-singing {
+    width: 90%;
+    padding-right: 20px;
+}
+
+.Main-content-content {
+    display: block;
+    float: left;
+    width: 66.7%;
+}
+
+.Main-content-text {
+    display: block;
+    padding-right: 30px;
+}
+
+.Main-content-list {
+    font-weight: bold;
+}
+
+.Main-content-post-text {
+    text-align: center;
+}
+
+.popup {
+    display: block;
+    left: auto;
+    right: auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.popup button {
+    font-size: 20pt;
+    border-width: 4px;
 }
 
 .Footer-image {
     width: 100%;
+}
+
+.Footer-text {
+    text-align: center;
+    color: aliceblue;
+}
+
+div.Footer-nav {
+    float: right;
+    text-align: center;
+}
+
+span.Footer-nav-item {
+    padding-right: 7px;
+}
+
+span.Footer-nav-item a {
+    color:lightgrey;
+}
+
+.popup {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.popupframe {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color:rgb(16, 42, 0);
+    opacity: 80%;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+button.Close-frame {
+    float: right;
+    margin-right: 25%;
+    font-size: small;
 }

@@ -6,51 +6,72 @@
     </head>
     <body>
         <div class="Update-bar">
-            <div class="popup" onclick="scheduleButton()"><em>Lessons Available! Sign Up Now!</em></div>
+            <div class="popup" onclick="buttonClick()"><em>Lessons Available! Sign Up Now!</em>
+            </div>
+            <div class="popupframe" id="signupButton">
+                <form action="/action_page.php" id="signupForm">
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="ldate">Lesson Date/Time</label>
+                    <input type="datetime" id="ldate" name="ldate"><br><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Close" onclick="hideForm()">
+                </form>
+            </div>
         </div>
-        <div class="Header-nav">
-            <span class="Header-nav-item">
-                <a href="/lessons.html">Lessons</a>
-            </span>
-            <span class="Header-nav-item">
-                <a href="/for-students.html">For Students</a>
-            </span>
-            <span class="Header-nav-item">
-                <a href="/about-us.html">About Us</a>
-            </span>
-            <span class="Header-nav-item">
-                <a href="/blog.html">Blog</a>
-            </span>
-            <span class="Header-nav-item">
-                <a href="/contact-us.html">Contact Us</a>
-            </span>
-            <span class="Header-nav-item">
-                <a href="/schedule-a-lesson.html">Schedule a Lesson</a>
-            </span>
-        </div>
+        <header class="Header">
+            <img class="Header-logo" src="./Images/logo.jpg">
+            <div class="Header-nav">
+                <span class="Header-nav-item">
+                    <a href="/lessons.html">Lessons</a>
+                </span>
+                <span class="Header-nav-item">
+                    <a href="/for-students.html">For Students</a>
+                </span>
+                <span class="Header-nav-item">
+                    <a href="/about-us.html">About Us</a>
+                </span>
+                <span class="Header-nav-item">
+                    <a href="/blog.html">Blog</a>
+                </span>
+                <span class="Header-nav-item">
+                    <a href="/contact-us.html">Contact Us</a>
+                </span>
+                <span class="Header-nav-item">
+                    <a href="/schedule-a-lesson.html">Schedule a Lesson</a>
+                </span>
+            </div>
+        </header>
         <div class="Main-content">
+            <div class="Main-content-header">
+                <strong>Voice Lessons for Adults</strong>
+            </div>
             <div class="Main-content-image">
-                <img src="./Images/Singing.jpg">
+                <img src="./Images/Singing.jpg" class="Main-content-image-singing">
             </div>
-            <div class="Main-content-text">
-                <p>The Love of Singing Music Studio offers comprehensive, individualized, and exciting private voice lessons for adults that teach you to sing the music you love!</p>
-                <p>Using a high-quality, traditional approach to the fundamentals, I offer a clear and attainable method for reading music, understanding music theory, and developing outstanding technique. Along with the fundamentals, I'll teach you to improvise, sing by ear, and write music (if desired). Most importantly, lessons are FUN and inspiring.</p>
-                <p>Whether you are a beginner looking to take your very first online voice lesson, or an advanced singer looking to improve your skills, I customize each lesson specifically for you!</p>
+            <div class="Main-content-content-box">
+                <div class="Main-content-content">
+                    <div class="Main-content-text">
+                        <p>The Love of Singing Music Studio offers comprehensive, individualized, and exciting private voice lessons for adults that teach you to sing the music you love!</p>
+                        <p>Using a high-quality, traditional approach to the fundamentals, I offer a clear and attainable method for reading music, understanding music theory, and developing outstanding technique. Along with the fundamentals, I'll teach you to improvise, sing by ear, and write music (if desired). Most importantly, lessons are FUN and inspiring.</p>
+                        <p>Whether you are a beginner looking to take your very first online voice lesson, or an advanced singer looking to improve your skills, I customize each lesson specifically for you!</p>
+                    </div>
+                    <div class="Main-content-list">
+                        <ul>
+                            <li>Vocal production for your genre</li>
+                            <li>Breath control</li>
+                            <li>Creating your unique sound</li>
+                            <li>Preparing for live performance</li>
+                            <li>Studio prep</li>
+                            <li>Music theory</li>
+                            <li>Technique</li>
+                            <li>Vocal health</li>
+                            <li>Sight singing/ear training</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="Main-content-list">
-                <ul>
-                    <li>Vocal production for your genre</li>
-                    <li>Breath control</li>
-                    <li>Creating your unique sound</li>
-                    <li>Preparing for live performance</li>
-                    <li>Studio prep</li>
-                    <li>Music theory</li>
-                    <li>Technique</li>
-                    <li>Vocal health</li>
-                    <li>Sight singing/ear training</li>
-                </ul>
-            </div>
-            <div class="Main-content-text">
+            <div class="Main-content-post-text">
                 <p>Lessons are highly individualized and appropriate for all levels of experience. Whether you are a complete beginner or someone with a musical background, I will meet you where you are and support working towards your goals and interests.</p>
                 <p>My online voice lessons bridge the gap between Musical Theatre, classical and pop stylings. You will learn to use your voice safely and effectively to produce the sound you want.</p>
                 <div class="Emphasized-text">
@@ -58,7 +79,7 @@
                     <p>Ready to start lesons?</p>
                 </div>
             </div>
-            <div class="popup" onclick="scheduleButton()">
+            <div class="popup" onclick="buttonClick()">
                 <button class="Signup-button">SCHEDULE NOW</button>
             </div>
         </div>
